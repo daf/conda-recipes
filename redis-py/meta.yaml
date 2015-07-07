@@ -1,0 +1,28 @@
+package:
+    name: redis-py
+    version: "2.10.3"
+
+source:
+    fn: redis-2.10.3.tar.gz
+    url: https://pypi.python.org/packages/source/r/redis/redis-2.10.3.tar.gz
+    md5: 7619221ad0cbd124a5687458ea3f5289
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+
+test:
+    imports:
+        - redis
+
+about:
+    home: https://github.com/andymccurdy/redis-py
+    license: MIT
+    summary: 'Python client for Redis key-value store'
+
